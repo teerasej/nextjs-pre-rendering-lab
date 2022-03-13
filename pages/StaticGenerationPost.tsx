@@ -3,7 +3,7 @@ import { GetStaticProps, NextPage, InferGetStaticPropsType } from 'next'
 import React from 'react'
 
 
-type Props = {
+type Team = {
   username:string,
   members:string[]
 }
@@ -19,7 +19,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 
-const StaticGenerationPost: NextPage = ({ username,members }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const StaticGenerationPost: NextPage = ({ username, members }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   console.log(username)
   console.log(members?.[0])
