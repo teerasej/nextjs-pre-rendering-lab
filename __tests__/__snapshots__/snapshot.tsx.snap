@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <h1>
+        Hello
+      </h1>
+    </div>
+    <a
+      href="/StaticGenerationPost"
+    >
+      Static Generation
+    </a>
+  </div>
+</div>
+`;
