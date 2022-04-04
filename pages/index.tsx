@@ -8,10 +8,8 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-        <Hello/>
-        <a>
-          <Link href={'/StaticGenerationPost'}>Static Generation</Link>
-        </a>
+      <Hello />
+      <Link href={'/StaticGenerationPost'}>Static Generation</Link>
     </div>
   )
 }
