@@ -4,16 +4,16 @@ import React from 'react'
 
 
 type Team = {
-  username:string,
-  members:string[]
+  username: string,
+  members: string[]
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  
+
   return {
     props: {
       username: 'tody',
-      members:  ['Tony', 'Peter']
+      members: ['Tony', 'Peter']
     }
   }
 }
@@ -25,7 +25,10 @@ const StaticGenerationPost: NextPage = ({ username, members }: InferGetStaticPro
   console.log(members?.[0])
 
   return (
-    <div>1. {username} with {members?.length} members</div>
+    <div>
+      <h1>SSG</h1>
+      <div>1. {username} with {members?.length} members</div>
+    </div>
   )
 }
 
