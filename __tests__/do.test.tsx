@@ -7,7 +7,8 @@ import '@testing-library/jest-dom'
 test('renders a link', () => {
     render(<Home />)
 
-    const link = screen.getByRole('link')
+    const linkToSSG = screen.getByRole('link').closest('a')
 
-    expect(link).toBeInTheDocument()
+    expect(linkToSSG).toBeInTheDocument()
+    expect(linkToSSG).toHaveAttribute('href','/StaticenerationPost')
 })
