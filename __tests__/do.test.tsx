@@ -10,5 +10,5 @@ test('renders a link', () => {
     const linkToSSG = screen.getByRole('link').closest('a')
 
     expect(linkToSSG).toBeInTheDocument()
-    expect(linkToSSG).toHaveAttribute('href','/StaticenerationPost')
+    expect(linkToSSG).toHaveAttribute('href','/StaticGenerationPost')
 })
