@@ -1,5 +1,6 @@
 
 import { GetStaticProps, NextPage, InferGetStaticPropsType } from 'next'
+import Head from 'next/head'
 import React from 'react'
 
 
@@ -25,7 +26,13 @@ const StaticGenerationPost: NextPage = ({ username, members }: InferGetStaticPro
   console.log(members?.[0])
 
   return (
-    <div>1. {username} with {members?.length} members</div>
+    <div>
+      <Head>
+        <title>SSG</title>
+      </Head>
+      <h1>SSG</h1>
+      <div>1. {username} with {members?.length} members</div>
+    </div>
   )
 }
 

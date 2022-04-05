@@ -1,5 +1,6 @@
 
 import { GetStaticProps, NextPage, InferGetStaticPropsType, GetServerSideProps, InferGetServerSidePropsType } from 'next'
+import Head from 'next/head'
 import React from 'react'
 
 
@@ -42,6 +43,9 @@ const CovidResult: NextPage = ({ result }: InferGetServerSidePropsType<typeof ge
 
     return (
         <div>
+            <Head>
+                <title>Covid Result SSR</title>
+            </Head>
             <h1>Update at {resultObject[0].txn_date}</h1>
             <p>New case: {resultObject[0].new_case}</p>
         </div>
