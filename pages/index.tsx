@@ -9,9 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
         <Hello/>
-        <a>
-          <Link href={'/StaticGenerationPost'}>Static Generation</Link>
-        </a>
+        <Link href={'/StaticGenerationPost'}>Static Generation</Link>
     </div>
   )
 }
