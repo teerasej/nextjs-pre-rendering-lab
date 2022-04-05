@@ -33,7 +33,6 @@ const StaticGenerationPost: NextPage = ({ username, members }: InferGetStaticPro
       <h1>SSG</h1>
       <div>1. {username} with {members?.length} members</div>
     </div>
-    
   )
 }
 
