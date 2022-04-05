@@ -10,6 +10,10 @@ describe('Navigation', () => {
         cy.visit('/')
     }) 
 
+    it('should say hello World', () => { 
+        cy.get('#doWorld').click()
+    })
+
     it('should navigate to the signin page', () => {
 
         cy.get('a[href*="StaticGenerationPost"]').click()
