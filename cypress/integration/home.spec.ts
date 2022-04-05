@@ -12,12 +12,29 @@ describe('Navigation', () => {
 
     it('should navigate to the signin page', () => {
 
-
         cy.get('a[href*="StaticGenerationPost"]').click()
 
         cy.url().should('include', '/StaticGenerationPost')
 
         cy.get('title').contains('SSG')
         cy.get('h1').should('be.visible')
+    })
+
+    it('should navigate to the covid result SSR', () => {
+
+        cy.visit('/covid-result-server')
+
+        cy.url().should('include', 'covid-result-server')
+
+        cy.get('title').contains('Covid Result SSR')
+    })
+
+    it('should navigate to the covid result SSG', () => {
+
+        cy.visit('/covid-result')
+
+        cy.url().should('include', 'covid-result')
+
+        cy.get('title').contains('Covid Result SSG')
     })
 })
