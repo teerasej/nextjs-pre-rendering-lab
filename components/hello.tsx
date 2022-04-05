@@ -15,7 +15,7 @@ const Hello = () => {
             <h1>Hello {
                     sayWorld ?? <span>World</span>
                 }</h1>
-            <button onClick={doWorld}>Say it!</button>
+            <button id='doWorld' onClick={doWorld}>Say it!</button>
         </div>
     )
 }
