@@ -11,7 +11,7 @@ describe('Navigation', () => {
     }) 
 
     it('should say hello World', () => { 
-        cy.get('#doWorld').click()
+        cy.get('#doWor').click()
     })
 
     it('should navigate to the signin page', () => {
