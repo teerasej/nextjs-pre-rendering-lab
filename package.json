@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "cypress": "cypress open",
-    "e2e": "start-server-and-test start http://localhost:3000 cypress"
+    "e2e": "next build && start-server-and-test start http://localhost:3000 cypress"
   },
   "dependencies": {
     "next": "12.1.0",
